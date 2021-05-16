@@ -31,6 +31,8 @@ def encode(text, max_sliding_window_size=4096):
     output = [] # Output array
 
     i = 0
+    moved_past = 0
+
     for char in text_bytes:
 
         if elements_in_array_plus_char(check_characters, char, search_buffer) == -1 or i == len(text_bytes) - 1:
@@ -40,7 +42,7 @@ def encode(text, max_sliding_window_size=4096):
             
             if len(check_characters) > 1:
                 index = elements_in_array(check_characters, search_buffer)
-                offset = i - index - len(check_characters) # Calculate the relative offset
+                offset = i - index - len(check_characters) - moved_past # Calculate the relative offset
                 length = len(check_characters) # Set the length of the token (how many character it represents)
 
                 token = f"<{offset},{length}>" # Build our token
@@ -61,7 +63,9 @@ def encode(text, max_sliding_window_size=4096):
         check_characters.append(char)
 
         if len(search_buffer) > max_sliding_window_size: # Check to see if it exceeds the max_sliding_window_size
-            search_buffer = search_buffer[1:] # Remove the first element from the search_buffer
+            diff = len(search_buffer) - max_sliding_window_size
+            moved_past += diff
+            search_buffer = search_buffer[diff:] # Remove the first element from the search_buffer
 
         i += 1
     

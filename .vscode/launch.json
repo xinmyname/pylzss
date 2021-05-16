@@ -5,10 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File",
+            "name": "compress",
             "type": "python",
             "request": "launch",
             "program": "compress.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "decompress",
+            "type": "python",
+            "request": "launch",
+            "program": "decompress.py",
             "console": "integratedTerminal"
         }
     ]
