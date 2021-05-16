@@ -72,9 +72,3 @@ if __name__ == "__main__":
     with open("greeneggs.txt") as f:
         contents = f.read()
         print(encode(contents, 256).decode(encoding))
-
-#    print(encode("ABCDEF ABCDEF", 4096).decode(encoding))
-#    print(encode("supercalifragilisticexpialidocious supercalifragilisticexpialidocious", 1024).decode(encoding))
-#    print(encode("LZSS will take over the world!", 256).decode(encoding))
-#    print(encode("It even works with 😀s thanks to UTF-8", 16).decode(encoding))
-    

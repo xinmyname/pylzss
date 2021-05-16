@@ -1,0 +1,53 @@
+I am Sam. <10,9> Sam-I-Am.
+
+That<16,9>! <15,14> I do not like t<44,13>
+
+Do you<28,6>green eggs and ham?
+
+<63,16>em,<124,11><93,14><65,18>.
+
+Would <101,9>them here or there?
+
+I would <104,13><38,14>.
+I <45,20>anyw<52,8><180,32><274,30>
+<261,20>in a house?
+<325,20>with a mouse?
+<254,19><233,11><316,20><265,13><254,21><500,17><353,17><544,30><574,30><588,14><597,10>eat <610,10>box<623,12><406,9><638,7>fox?
+
+Not <448,8>. Not <449,10>.
+<459,9>house.<479,12><708,9>would not <602,9><746,17><547,19><779,12><604,14><826,31><845,19><856,10>? C<621,10>In a car?
+E<909,7>! <649,9> Here they are.
+<869,12>, c<691,10>in a car.
+
+You may <841,9>. You will see.
+<774,17> in a tree!<874,24><821,10>.
+N<812,8>car! You let me be.
+
+<1046,9>, would you, with a goat?
+
+<977,23><925,11>!
+W<973,10>could you, on a b<996,8><1194,11><1129,11><993,9>.
+I will not, w<991,9><1133,11><1039,12> eat<1289,9>the rain<1273,9>the dark! <1309,9>tree!
+<1348,18><1357,9>!
+I do not like <1203,8>a box.
+I <1165,17>with a fox.
+I <1325,21>a house<1269,28>m<1265,25>here or there<1396,21>anywhere<1478,16>green eggs and ham<1550,20>, Sam-I-Am.
+
+You <1616,16>. So you say.
+Try them! <1404,9> And you m<1449,12> and you may, I say.
+
+Sam! If you let me be,
+I will try them. You will see.
+
+(... And he tries them ...)
+
+Say! I<1802,30><1600,9><1824,14>!
+And I would eat them in a boat.
+<1668,21>with a goat...<1726,8>ill <1737,8>, in the rain.
+And in the dark. And on a tr<1758,12>a car. And in a tree.
+They are so good, <1782,8> you see!
+So <1932,15><2007,8>x<1992,21><2035,8>f<1896,24>in a house<1967,29>m<1964,26>here and there.
+Say!<2132,17>anywhere!
+I do so like green eggs and ham!
+Thank you! <2041,9>, Sam-I-Am.
+
