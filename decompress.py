@@ -1,3 +1,5 @@
+import sys
+
 encoding = "utf-8"
 
 def decode(text):
@@ -25,9 +27,11 @@ def decode(text):
             offset_num = int(bytes(offset).decode(encoding))
 
             # Get text that the token represents
-            referenced_text = output[-offset_num:][:length_num]
+            back_ref = output[-offset_num:][:length_num]
+            back_ref_text = bytes(back_ref).decode(encoding)
 
-            output.extend(referenced_text) # referenced_text is a list of bytes so we use extend to add each one to output
+            output.extend(back_ref) # back_ref is a list of bytes so we use extend to add each one to output
+            output_text = bytes(output).decode(encoding)
 
             # Reset length and offset
             length, offset = [], []
@@ -38,11 +42,15 @@ def decode(text):
                 length.append(char)
         else:
             output.append(char) # Add the character to our output
+            output_text = bytes(output).decode(encoding)
+            output_text = output_text
 
     
     return bytes(output)
 
 if __name__ == "__main__":
-    with open("andham-py.txt") as f:
-        contents = f.read()
-        print(decode(contents).decode(encoding))
+    if len(sys.argv) < 2:
+        print(decode(sys.stdin.read()).decode(encoding))        
+    else:
+        with open(sys.argv[1]) as f:
+            print(decode(f.read()).decode(encoding))
